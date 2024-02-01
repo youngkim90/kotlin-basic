@@ -12,8 +12,8 @@ open class Dog {
 
 // 상속을 받으려면 클래스 뒤에 : 부모클래스()를 붙여야 한다.
 // 생성자 내부 파라미터에 오버라이드 할 변수 선언이 가능하다.
-open class Bulldog(override var age: Int = 0): Dog() {
-//    override var age: Int = 0
+open class Bulldog(override var age: Int = 0) : Dog() {
+    //    override var age: Int = 0
     // final 키워드 사용 시 하위 클래스에서 오버라이드 불가능
     final override fun bark() {
         super.bark()
@@ -26,7 +26,7 @@ abstract class Developer {
     abstract fun code(language: String)
 }
 
-class BackendDeveloper(override var age: Int): Developer() {
+class BackendDeveloper(override var age: Int) : Developer() {
     // 추상클래스의 abstract 변수는 모두 할당 받아야함.
     override fun code(language: String) {
         println("BackendDeveloper code is $language")

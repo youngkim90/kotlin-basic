@@ -22,7 +22,7 @@ fun main() {
 
     // 여러 조컨을 콤마로 구분해 정의 가능
     when (getNumber()) {
-        0,1 -> println("0 또는 1")
+        0, 1 -> println("0 또는 1")
         else -> println("기타")
     }
 }

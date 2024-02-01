@@ -22,7 +22,7 @@ fun main() {
     }
 
     // 배열 생성 및 반복
-    val number = arrayOf(1,2,3)
+    val number = arrayOf(1, 2, 3)
     for (i in number) {
         println(number[i])
     }

@@ -4,10 +4,11 @@ interface Wheel {
     fun move()
 }
 
-interface Cart: Wheel {
+interface Cart : Wheel {
     var coin: Int
     val weight: String
         get() = "20KG" // 프로퍼티의 초기값이 없기 때문에 특정 값을 반환해야함.
+
     fun add(product: Product)
 
     // 인터페이스 내부적으로 구현하는 함수의 경우 {}를 통해 구현 가능
@@ -35,7 +36,7 @@ interface Order {
 class Product(val name: String, val price: Int)
 
 // 복수개의 인터페이스 상속이 가능
-class MyCart(override var coin: Int): Cart, Order {
+class MyCart(override var coin: Int) : Cart, Order {
     override fun add(product: Product) {
         if (coin <= 0) println("코인을 넣어주세요")
         else println("${product.name}을 카트에 담았습니다.")

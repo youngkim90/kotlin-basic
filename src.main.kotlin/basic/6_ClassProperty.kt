@@ -6,11 +6,11 @@ class Coffee(
         var name: String = "",
         var price: Int = 0,
         var iced: Boolean = false, // 후행콤마 사용 가능
-        ) {
+) {
     val brand: String
         get() = "이디야" // 커스텀 getter 선언
 
-    var quantity : Int = 0
+    var quantity: Int = 0
         set(value) {
             if (value > 0) {
                 field = value // getter, setter에서 field는 해당 프로퍼티를 가리킨다.
