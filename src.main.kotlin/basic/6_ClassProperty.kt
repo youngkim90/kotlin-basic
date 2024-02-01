@@ -1,6 +1,7 @@
 package basic
 
 // 코틀린은 클래스에 생성자(생략가능) 함께 선언 가능하다.
+// 코틀린의 모든 클래스의 기본 조상은 Any이다.
 class Coffee(
         var name: String = "",
         var price: Int = 0,
