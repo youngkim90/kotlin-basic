@@ -2,6 +2,7 @@ package advanced
 
 // 데이터를 다루고 전달할 때 주로 사용(DTO)
 // class 앞에 data 키워드를 사용
+// 데이터 클래스는 내부적으로 equals(), hashCode(), toString(), copy() 등의 메소드를 포함하고 있다.
 data class Person(val name: String, val age: Int)
 
 fun main() {
